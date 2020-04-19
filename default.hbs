@@ -30,8 +30,22 @@
         {{{body}}}
 
         {{!-- The footer at the very bottom of the screen --}}
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
+        <footer>
+            <div class="footer-bottom">
+                <div class="links">
+                    <a ui-sref="about" href="/about">אודות</a>
+                    <a href="/blog/" target="_self">בלוג</a>
+                    <a ui-sref="terms" href="/terms">תנאי שימוש</a>
+                    <a href="/api/sitemap/maps-index.xml" target="_self">מפת אתר</a>
+                </div>
+                <div class="copyright">
+                    <span class="ng-binding">&copy; {{date format="YYYY"}} מניבים ישראל</span>
+                    <span>&nbsp;כל הזכויות שמורות.</span>
+                </div>
+            </div>
+        </footer>
+        {{!-- <footer class="site-footer outer">
+             <div class="site-footer-content inner">
                 <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
                 <nav class="site-footer-nav">
                     <a href="{{@site.url}}">Latest Posts</a>
@@ -40,7 +54,7 @@
                     <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
                 </nav>
             </div>
-        </footer>
+        </footer> --}}
 
     </div>
 
