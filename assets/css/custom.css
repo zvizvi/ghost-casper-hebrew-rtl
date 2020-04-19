@@ -75,10 +75,6 @@
     transition: margin 0.2s;
 }
 
-.site-nav-content ul li.nav-blvg {
-    letter-spacing: 0;
-}
-
 .site-nav-content ul li.nav-hrshmh-l-dkvnym {
     letter-spacing: 0;
 }
@@ -87,7 +83,71 @@
     padding-right: 0;
 }
 
-.site-nav-right .nav-prsvm-nks a {
+header .login-menu {
+    margin: 19px 0 0;
+    transition: margin 0.2s;
+    box-sizing: border-box;
+}
+
+header .site-nav-main.nav-post-title-active .login-menu {
+    margin-top: 10px;
+}
+
+header .login-menu .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    user-select: none;
+    margin: 0 5px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+header .login-menu .add-btn {
+    color: #fff;
+    background-color: #2e8ddd;
+    border-color: #2e8ddd;
+}
+
+header .login-menu .add-btn:hover {
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+header .login-menu .signup-btn {
+    color: #fff;
+    background: #2e3748;
+    border-color: #2e3748;
+}
+
+header .login-menu .login-btn {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+header .login-menu .login-btn:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+header .login-menu .divider {
+    display: inline-block;
+    margin: 0 10px;
+    background: #ccc;
+    height: 32px;
+    width: 1px;
+    vertical-align: middle;
+}
+
+.header-left-controls a {
     border-radius: 4px;
     color: #fff !important;
     font-weight: 400 !important;

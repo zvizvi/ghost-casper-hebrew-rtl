@@ -16,7 +16,13 @@
             </div>
         </div>
     </div>
-    <div class="site-nav-right">
+    <div class="login-menu">
+        <a href="/property/add" class="add-btn btn">פרסום נכס</a>
+        <span class="divider"></span>
+        <a href="/login" class="signup-btn btn">הרשמה</a>
+        <a href="/sign-up" class="login-btn btn">התחברות</a>
+    </div>
+    {{!-- <div class="site-nav-right">
         {{#if @site.secondary_navigation}}
             {{navigation type="secondary"}}
         {{else}}
@@ -36,5 +42,5 @@
         {{#if @labs.members}}
             <a class="subscribe-button" href="#subscribe">Subscribe</a>
         {{/if}}
-    </div>
+    </div> --}}
 </nav>
