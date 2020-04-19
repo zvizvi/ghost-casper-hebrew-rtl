@@ -38,7 +38,8 @@
     padding: 0 35px;
 }
 
-.site-nav-main.outer.nav-post-title-active .site-nav-logo img {
+.site-nav-main.outer.nav-post-title-active .site-nav-logo img,
+.site-nav-main.outer .fixed-nav-active .site-nav-logo img {
     height: 34px;
 }
 
@@ -47,7 +48,8 @@
     transition: height 0.3s;
 }
 
-.site-nav-main.outer.nav-post-title-active .site-nav {
+.site-nav-main.outer.nav-post-title-active .site-nav,
+.site-nav-main.outer .fixed-nav-active.site-nav {
     height: 53px;
 }
 
@@ -79,21 +81,27 @@
     letter-spacing: 0;
 }
 
+.fixed-nav-active.site-nav .site-nav-content ul li {
+    margin-top: 0;
+}
+
 .site-nav-left .nav li:last-of-type {
     padding-right: 0;
 }
 
-header .login-menu {
+/* header site-nav-main */
+.site-nav-main .login-menu {
     margin: 19px 0 0;
     transition: margin 0.2s;
     box-sizing: border-box;
 }
 
-header .site-nav-main.nav-post-title-active .login-menu {
+.site-nav-main.nav-post-title-active .login-menu,
+.site-nav-main .fixed-nav-active .login-menu {
     margin-top: 10px;
 }
 
-header .login-menu .btn {
+.site-nav-main .login-menu .btn {
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -110,35 +118,35 @@ header .login-menu .btn {
     text-decoration: none;
 }
 
-header .login-menu .add-btn {
+.site-nav-main .login-menu .add-btn {
     color: #fff;
     background-color: #2e8ddd;
     border-color: #2e8ddd;
 }
 
-header .login-menu .add-btn:hover {
+.site-nav-main .login-menu .add-btn:hover {
     background-color: #286090;
     border-color: #204d74;
 }
 
-header .login-menu .signup-btn {
+.site-nav-main .login-menu .signup-btn {
     color: #fff;
     background: #2e3748;
     border-color: #2e3748;
 }
 
-header .login-menu .login-btn {
+.site-nav-main .login-menu .login-btn {
     color: #333;
     background-color: #fff;
     border-color: #ccc;
 }
 
-header .login-menu .login-btn:hover {
+.site-nav-main .login-menu .login-btn:hover {
     background-color: #e6e6e6;
     border-color: #adadad;
 }
 
-header .login-menu .divider {
+.site-nav-main .login-menu .divider {
     display: inline-block;
     margin: 0 10px;
     background: #ccc;
@@ -147,17 +155,17 @@ header .login-menu .divider {
     vertical-align: middle;
 }
 
-.header-left-controls a {
-    border-radius: 4px;
-    color: #fff !important;
-    font-weight: 400 !important;
-    background-color: #2e8ddd;
-    border-color: #2e8ddd;
-    padding: 8.2px 12px !important;
-    font-size: 14px !important;
-    line-height: 1.42857143;
+.home-template .site-nav-logo {
+    width: 162px;
 }
 
+.home-template .site-nav-main .site-nav {
+    opacity: 1;
+}
+
+
+
+/* * */
 .social-link svg,
 .rss-button svg {
     fill: #aaa;
